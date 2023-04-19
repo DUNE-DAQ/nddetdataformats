@@ -1,0 +1,1 @@
+from .._daq_nddetdataformats_py.mpd import *
