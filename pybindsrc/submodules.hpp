@@ -1,16 +1,14 @@
-#ifndef __DUNEDAQ_NDDETDATAFORMATS_PYBINDSRC_SUBMODULES_HPP__
-#define __DUNEDAQ_NDDETDATAFORMATS_PYBINDSRC_SUBMODULES_HPP__ 
-
+#ifndef NDDETDATAFORMATS_PYBINDSRC_SUBMODULES_HPP_
+#define NDDETDATAFORMATS_PYBINDSRC_SUBMODULES_HPP_
+        
 #include <pybind11/pybind11.h>
 
 namespace dunedaq::nddetdataformats {
 
-namespace mpd {
-namespace python {
-extern void register_mpd(pybind11::module &);    
-}
-}  // namespace mpd::python
+  namespace mpd::python {
+    extern void register_mpd(pybind11::module &);    
+  }  // namespace mpd::python
 
 }  // namespace dunedaq::nddetdataformats
 
-#endif /* __DUNEDAQ_NDDETDATAFORMATS_PYBINDSRC_SUBMODULES_HPP__ */
+#endif // NDDETDATAFORMATS_PYBINDSRC_SUBMODULES_HPP_
