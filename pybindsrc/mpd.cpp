@@ -14,7 +14,7 @@
 
 namespace py = pybind11;
 
-namespace dunedaq::nddetdataformats::mpd::python {
+namespace dunedaq::nddetdataformats::python {
 
 void
 register_mpd(py::module& m)
@@ -66,4 +66,4 @@ register_mpd(py::module& m)
 
 }
 
-} // namespace dunedaq::nddetdataformats::mpd::python
+} // namespace dunedaq::nddetdataformats::python

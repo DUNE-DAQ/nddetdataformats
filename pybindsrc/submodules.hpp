@@ -3,12 +3,10 @@
         
 #include <pybind11/pybind11.h>
 
-namespace dunedaq::nddetdataformats {
+namespace dunedaq::nddetdataformats::python {
 
-  namespace mpd::python {
-    extern void register_mpd(pybind11::module &);    
-  }  // namespace mpd::python
+  extern void register_mpd(pybind11::module &);    
 
-}  // namespace dunedaq::nddetdataformats
+}  // namespace dunedaq::nddetdataformats::python
 
 #endif // NDDETDATAFORMATS_PYBINDSRC_SUBMODULES_HPP_

@@ -20,7 +20,7 @@ PYBIND11_MODULE(_daq_nddetdataformats_py, m)
   m.doc() = "C++ implementation of the nddetdataformats modules";
 
   py::module_ mpd_module = m.def_submodule("mpd");
-  mpd::python::register_mpd(mpd_module);
+  register_mpd(mpd_module);
 }
 
 } // namespace dunedaq::nddetdataformats::python
