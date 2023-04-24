@@ -18,7 +18,7 @@ daq_add_python_bindings(*.cpp LINK_LIBRARIES ${PROJECT_NAME} )
 
 ##############################################################################
 
-daq_add_unit_test(Placeholder_test LINK_LIBRARIES)  # Placeholder_test should be replaced with real unit tests
+daq_add_unit_test(Nddetdataformats_test LINK_LIBRARIES) 
 
 ##############################################################################
 
