@@ -6,14 +6,14 @@
  * received with this code.
  */
 
+#include "registrators.hpp"
+
 #include "pybind11/pybind11.h"
 #include "pybind11/stl.h"
 
 namespace py = pybind11;
 
 namespace dunedaq::nddetdataformats::python {
-
-  extern void register_mpd(pybind11::module &);    
 
 PYBIND11_MODULE(_daq_nddetdataformats_py, m)
 {
