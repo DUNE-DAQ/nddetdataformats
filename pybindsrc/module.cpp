@@ -6,9 +6,10 @@
  * received with this code.
  */
 
+#include "registrators.hpp"
+
 #include "pybind11/pybind11.h"
 #include "pybind11/stl.h"
-#include "submodules.hpp"
 
 namespace py = pybind11;
 
@@ -19,8 +20,7 @@ PYBIND11_MODULE(_daq_nddetdataformats_py, m)
 
   m.doc() = "C++ implementation of the nddetdataformats modules";
 
-  py::module_ mpd_module = m.def_submodule("mpd");
-  register_mpd(mpd_module);
+  register_mpd(m);
 }
 
 } // namespace dunedaq::nddetdataformats::python
